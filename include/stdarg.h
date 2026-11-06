@@ -12,7 +12,8 @@
 
 /* 7.15.1.2 The va_copy macro */
 #define __va_copy(dest, src) __builtin_va_copy(dest, src)
-#if __STDC_VERSION__ >= 199901L
+
+#if __STDC_VERSION__ >= 199901L || __cplusplus >= 201103L
 #define va_copy(dest, src) __va_copy(dest, src)
 #endif /* __STDC_VERSION__ >= 199901L */
 

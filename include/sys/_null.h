@@ -1,12 +1,10 @@
 #undef NULL
 #ifdef __cplusplus
-#ifdef __GNUC__
+#if __GNUC__ > 3
 #define NULL __null
-#elif __cplusplus >= 201103L
-#define NULL nullptr
 #else
 #define NULL 0L
-#endif /* __GNUC__ */
+#endif /* __GNUC__ > 3 */
 #else /* ! __cplusplus */
 #define NULL ((void*)0)
 #endif /* __cplusplus */
