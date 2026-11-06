@@ -1,0 +1,5 @@
+*.todo
+*.swp
+
+.vscode/
+/build/
