@@ -8,8 +8,7 @@
 #define __REQUIRE_wchar_t
 
 #if __cplusplus >= 201103L
-/* NOTE: 
- * exposed to C++11 builds only, C99 doesn't have a max_align_t type */
+/* NOTE: exposed to C++11 builds only, C99 doesn't have a max_align_t type */
 #define __REQUIRE_max_align_t
 #endif /* __cplusplus >= 201103L */
 
